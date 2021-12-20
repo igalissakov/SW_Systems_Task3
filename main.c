@@ -44,6 +44,7 @@ void Gematria(char* word, char* txt)
             }
             else{
                 match[k++]=txt[j];
+                match[k]='\0';
                 print_sub(match,flag);
                 flag=1;
                 memset(match,'\0',WORD);
